@@ -29,20 +29,21 @@ function App() {
           <Moi />
           <Title />
         </article>
+        
 
         <BrowserRouter>
-        <Coordonnees />
-        <Liens />
-        <Comp />
-          <Routes>
-            {/* <Route path="/" element={<App />} /> */}
-            <Route path="/liens" element={<Liens />} />
-            <Route path="/mesliens" element={<MesLiens />} />
-            <Route path="/comp" element={<Comp />} />
-            <Route path="/mescomp" element={<MesCompetences />} />
-            <Route path="/coordonne" element={<Coordonnees />} />
-            <Route path="/mescoordonnees" element={<MesCoordonne />} />
-          </Routes>
+          <Coordonnees />
+          <Liens />
+          <Comp />
+            <Routes>
+              {/* <Route path='/' element={<Accueil />} /> */}
+              <Route path="/liens" element={<Liens />} />
+              <Route path="/mesliens" element={<MesLiens />} />
+              <Route path="/comp" element={<Comp />} />
+              <Route path="/mescomp" element={<MesCompetences />} />
+              <Route path="/coordonne" element={<Coordonnees />} />
+              <Route path="/mescoordonnees" element={<MesCoordonne />} />
+            </Routes>
         </BrowserRouter>
     </div>
   );
